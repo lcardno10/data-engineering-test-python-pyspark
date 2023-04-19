@@ -1,26 +1,21 @@
 # Data Test - Starter Project
 
 ### Prerequisites
-#### Java JDK 8
 
-Go to https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-and under the section "Java SE Development Kit 8u191" (the final digits may vary at the time you're reading this)
-click the `Accept License Agreement` radio button and download the version appropriate to your operating system.
+#### Python (3.8.* or later - tested with 3.10.6)
 
-#### Python 3.6.* or later.
+You can install python either [from source](https://www.python.org/downloads/) or [with pyenv](https://github.com/pyenv/pyenv).
 
-See installation instructions at: https://www.python.org/downloads/
 
-Check you have python3 installed:
+Check you have python installed:
 
 ```bash
-python3 --version
+python --version
 ```
 
-#### Preferably an IDE such as Pycharm Community Edition
+#### Preferably an IDE such as Visual Studio Code
 
-https://www.jetbrains.com/pycharm/download/
-
+https://code.visualstudio.com/
 
 ### Dependencies and data
 
@@ -29,19 +24,19 @@ https://www.jetbrains.com/pycharm/download/
 Ensure your pip (package manager) is up to date:
 
 ```bash
-pip3 install --upgrade pip
+pip install --upgrade pip
 ```
 
 To check your pip version run:
 
 ```bash
-pip3 --version
+pip --version
 ```
 
 Create the virtual environment in the root of the cloned project:
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 ```
 
 #### Activating the newly created virtual environment
@@ -57,21 +52,19 @@ source ./.venv/bin/activate
 This will install some of the packages you might find useful:
 
 ```bash
-pip3 install -r ./requirements.txt
+pip install -r requirements.txt
 ```
 
 #### Running tests to ensure everything is working correctly
 
 ```bash
-pytest ./tests
+pytest
 ```
 
 #### Generating the data
 
 A data generator is included as part of the project in `./input_data_generator/main_data_generator.py`
 This allows you to generate a configurable number of months of data.
-Although the technical test specification mentions 6 months of data, it's best to generate
-less than that initially to help improve the debugging process.
 
 To run the data generator use:
 
@@ -80,7 +73,6 @@ python ./input_data_generator/main_data_generator.py
 ```
 
 This should produce customers, products and transaction data under `./input_data/starter`
-
 
 
 #### Getting started
