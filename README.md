@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-#### Python (3.8.* or later - tested with 3.10.6)
+#### Python (3.8.* or later)
 
 You can install python either [from source](https://www.python.org/downloads/) or [with pyenv](https://github.com/pyenv/pyenv).
 
